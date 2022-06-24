@@ -9,6 +9,7 @@ Foods will be printed to an output file in order of safety. Safety is determined
 ## Usage
 
 Download "mysymptoms.csv"
+
     1. Open the MySymptoms app.
     2. Navigate to the "More" tab.
     3. Select "Diary Report" then "CSV".
