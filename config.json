@@ -1,0 +1,10 @@
+{
+    "input_file": "mySymptomsDiary.csv",
+    "output_file": "consumable_scores.json",
+    "consumables": ["Breakfast", "Lunch", "Dinner",
+                   "Snack", "Drink", "Medication", "Supplements"],
+    "symptoms" : [],
+    "min_times_consumed" : 3,
+    "symptom_warning_score" : 2,
+    "symptom_onset_hours" : 6
+    }
