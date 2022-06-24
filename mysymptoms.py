@@ -150,12 +150,6 @@ def clean_data(data: str) -> str:
     return data.strip(" ").replace('"', "")
 
 
-def save_to_file(data: object, output_file: str):
-    """creates a file and writes the given json data into it"""
-    with open(output_file, "w") as json_file:
-        json.dump(data, json_file, indent=4, default=vars)
-
-
 def convert_to_date_time(date: str, time: str) -> object:
     """ converts date and time strings into one datetime object """
     datetime_string = clean_data(date + time)
@@ -251,6 +245,10 @@ def calculate_safest_consumables(consumables: list, min_times_consumed: int, war
     sorted_by_danger = sorted(symptom_scores, key= lambda x: x["danger_score"])
     return sorted_by_danger
 
+def save_to_file(data: object, output_file: str):
+    """creates a file and writes the given json data into it"""
+    with open(output_file, "w") as json_file:
+        json.dump(data, json_file, indent=4, default=vars)
 
 if __name__ == "__main__":
     config = Config()
